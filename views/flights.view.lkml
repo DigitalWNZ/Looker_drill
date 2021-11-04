@@ -175,6 +175,7 @@ view: flights {
   measure: count_for_custom{
     type: count
     # drill from chart and table data may leads to different chart
+    # google "looker chart_type chart parameter for lookml dashboard" to fine the reference to plot parameter"
     drill_fields: [airline,departure_state,total_arrival_actual]
     link: {
       label: "See as custom viz (heatmap)"
